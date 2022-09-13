@@ -29,6 +29,7 @@ class Container {
         let contObj = await this.getAll()
         let result = contObj.find(obj => obj.id == id)
         console.log(result)
+        return(result)
     }
 
     async deleteById(id){
@@ -45,8 +46,8 @@ class Container {
 let container = new Container('productos.txt')
 
 // container.save({ "name": "jaggermeister", "price": 10000 })
-// container.save({ "name": "fernet branca", "price": 1300 })
-// container.save({ "name": "gancia red bitter", "price": 900 })
-// container.save({ "name": "quilmes 1lt", "price": 300 })
-// container.save({ "name": "aperol", "price": 800 })
-// container.save({ "name": "jack daniels", "price": 10000 })
+// container.getById(2)
+// container.deleteById(4)
+// container.deleteAll()
+
+// PROBE TODOS Y ANDAN, NO PUEDO TIRAR MUCHOS SAVE AL MISMO TIEMPO PORQUE SOLO PUSHEA EL ULTIMO.
