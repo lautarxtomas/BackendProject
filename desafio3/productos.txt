@@ -1,0 +1,19 @@
+[
+    {
+        "name": "zapatillas nike airmax",
+        "price": 35000,
+        "id": 1
+    },
+    
+    {
+        "name": "zapatillas adidas superstar",
+        "price": 25000,
+        "id": 2
+    },
+
+    {
+        "name": "zapatillas puma bmw",
+        "price": 22000,
+        "id": 3
+    }
+]
