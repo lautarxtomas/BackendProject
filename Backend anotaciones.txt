@@ -19,6 +19,7 @@ deben ejecutarse parado en la ruta de la misma carpeta.
 npm init -y (crea el package.json)
 npm install random (require en js)
 npm install express (require en js)
+npm i -g nodemon
 npm install multer (require en js)
 
 - Incluir .gitignore para cada proyecto (por ej: en la carpeta de desafio2, en la de desafio3, etc).
