@@ -2,11 +2,15 @@ INSTALAR NODE JS (VERSION RECOMENDADA)
 INSTALAR GIT
 
 // PARA COMITTEAR UN REPO DESDE OTRO PC: 
-- INSTALAR EXTENSION DE GITHUB EN VSC Y VINCULAR LA CUENTA
+- INSTALAR EXTENSION DE GITHUB EN VSC Y VINCULAR LA CUENTA (not sure)
+- En la terminal poner git config --global user.email lautaro.martinez88@mi.unc.edu.ar
+- Luego, escribir git config --global user.name lautarxtomas
 - git clone linkdelrepo
 - git add .
 - git commit -m "commit desde otro pc"
 - git push
+
+- git pull para actualizar el repo local con los archivos del repo remoto
 
 
 Comandos al crear el proyecto: 
@@ -21,5 +25,10 @@ npm install random (require en js)
 npm install express (require en js)
 npm i -g nodemon
 npm install multer (require en js)
+
+PLANTILLAS:
+npm install express-handlebars
+npm install pug
+npm install ejs
 
 - Incluir .gitignore para cada proyecto (por ej: en la carpeta de desafio2, en la de desafio3, etc).
