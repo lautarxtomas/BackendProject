@@ -20,7 +20,7 @@ Se deben ejecutar en la terminal situados en la
 carpeta correspondiente. Si creamos una subcarpeta para un proyecto aparte, también 
 deben ejecutarse parado en la ruta de la misma carpeta.
 
-npm init -y (crea el package.json)
+npm init -y (crea el package.json / el proyecto en si)
 npm install random (require en js)
 npm install express (require en js)
 npm i -g nodemon
@@ -31,4 +31,42 @@ npm install express-handlebars
 npm install pug
 npm install ejs
 
+WEBSOCKET:
+npm install socket.io
+npm install socket.io --save
+
+BABEL:
+npm install @babel/core @babel/cli @babel/preset-env
+
+
+IMPORTANTE!!!!!!:
+
+--> PONER PRIMERO  
+app.use(express.json())
+app.use(express.urlencoded({ extended: true}))
+
+--> Y DESPUES
+
+// USO LOS ROUTERS
+app.use('/api/products', routerProducts)
+app.use('/api/carts', routerCarts)
+
+--------------------------------
+
+//// ------- INSTALL TYPESCRIPT -------------:
+npm i typescript
+
+// en el package json, adentro de scripts escribir:
+"build": "tsc" --> (transpilacion manual) (para escribir npm run build)
+
+// en el tsconfig.json, en Modules escribir:
+"module": "module"
+"rootDir": "./src"
+"outDir": "./dist"
+
+/// ---------------------------------------------------------
+
 - Incluir .gitignore para cada proyecto (por ej: en la carpeta de desafio2, en la de desafio3, etc).
+
+Frenar proceso en server 8080:
+npx kill-port 8080
