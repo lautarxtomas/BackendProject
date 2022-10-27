@@ -22,7 +22,8 @@ const addMessage = (e) => {
 const addProduct = (e) => {
     const product = {
         name: document.getElementById('productName').value,
-        price: document.getElementById('price').value
+        price: document.getElementById('price').value,
+        stock: document.getElementById('stock').value
     }
     socket.emit('new-product', product)
     

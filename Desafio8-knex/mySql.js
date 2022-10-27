@@ -5,7 +5,7 @@ class SqlClient {
     this.knex = knexLib(config)
   }
 
-  createTabla() {
+  createTable() {
     return this.knex.schema.dropTableIfExists('products')
       .finally(() => {
         return this.knex.schema.createTable('products', table => {
